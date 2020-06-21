@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper namespace="mapper.TUserMapper">
+
+    <select id="selectByPrimaryKey"  resultType="entity.User">
+        select
+        id,name
+        from t_user
+        where id = ?
+    </select>
+</mapper>
